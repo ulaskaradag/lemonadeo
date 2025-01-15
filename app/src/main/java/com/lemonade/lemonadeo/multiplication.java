@@ -90,15 +90,15 @@ public class multiplication extends AppCompatActivity {
             imageView.setVisibility(View.GONE);
             submitAnswerButton.setVisibility(View.GONE);
             numberTextView.setVisibility(View.GONE);
-            if(total_score < 3 && total_score >= 0){
+            if(total_score <= 3){
                 resultTextView.setText("You should work harder to be an expert!");
                 resultTextView.setVisibility(View.VISIBLE);
             }
-            else if(total_score >= 3 && total_score <= 7){
+            else if(total_score <= 7){
                 resultTextView.setText("You are getting closer to be an expert!");
                 resultTextView.setVisibility(View.VISIBLE);
             }
-            else if(total_score == 8 || total_score == 9){
+            else if(total_score <= 9){
                 resultTextView.setText("You are an inch away to be an expert!");
                 resultTextView.setVisibility(View.VISIBLE);
             }
